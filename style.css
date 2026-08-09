@@ -3,8 +3,9 @@
   --bg-alt: #f6f7f9;
   --text: #16181d;
   --text-muted: #5a5f6b;
-  --accent: #4f46e5;
-  --accent-2: #06b6d4;
+  --accent: #9dc183;
+  --accent-2: #d4a373;
+  --on-accent: #1f2e17;
   --border: #e5e7eb;
   --card-bg: #ffffff;
   --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04);
@@ -19,6 +20,7 @@
   --text-muted: #9aa0ac;
   --accent: #818cf8;
   --accent-2: #22d3ee;
+  --on-accent: #ffffff;
   --border: #232733;
   --card-bg: #161923;
   --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.25);
@@ -208,7 +210,7 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   box-shadow: 0 8px 20px color-mix(in srgb, var(--accent) 35%, transparent);
 }
 .btn-primary:hover { transform: translateY(-2px); }
@@ -451,6 +453,7 @@ a { color: inherit; text-decoration: none; }
     --text-muted: #9aa0ac;
     --accent: #818cf8;
     --accent-2: #22d3ee;
+    --on-accent: #ffffff;
     --border: #232733;
     --card-bg: #161923;
     --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.25);

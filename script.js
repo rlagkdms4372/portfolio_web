@@ -7,7 +7,7 @@ const themeToggle = document.getElementById("themeToggle");
 
 function applyTheme(theme) {
   root.setAttribute("data-theme", theme);
-  themeToggle.textContent = theme === "dark" ? "LIGHT" : "DARK";
+  themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
 }
 
 const savedTheme = localStorage.getItem("theme");

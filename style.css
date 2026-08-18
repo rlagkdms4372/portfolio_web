@@ -212,10 +212,10 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero-desc {
-  max-width: 480px;
   color: var(--text-muted);
   font-size: 1.02rem;
   margin: 0;
+  white-space: nowrap;
 }
 
 .hero-links {
@@ -573,6 +573,7 @@ a { color: inherit; text-decoration: none; }
   .nav-toggle.open span:nth-child(2) { opacity: 0; }
   .nav-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
   .hero-row { flex-direction: column; align-items: flex-start; }
+  .hero-desc { white-space: normal; }
   .hero-inner { flex-direction: column; }
   .social-col {
     flex-direction: row;

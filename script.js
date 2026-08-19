@@ -76,3 +76,28 @@ const sectionObserver = new IntersectionObserver(
 );
 
 sections.forEach((section) => sectionObserver.observe(section));
+
+// Project tab filtering
+const projectTabs = [...document.querySelectorAll(".project-tab")];
+const projectRows = [...document.querySelectorAll(".project-row")];
+
+function applyProjectFilter(filter) {
+  let lastVisible = null;
+  projectRows.forEach((row) => {
+    const match = filter === "all" || row.dataset.category === filter;
+    row.classList.toggle("is-hidden", !match);
+    row.classList.remove("is-last-visible");
+    if (match) lastVisible = row;
+  });
+  if (lastVisible) lastVisible.classList.add("is-last-visible");
+}
+
+projectTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    projectTabs.forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+    applyProjectFilter(tab.dataset.filter);
+  });
+});
+
+applyProjectFilter("all");

@@ -140,9 +140,15 @@
         <h2 class="section-title">Projects</h2>
         <span class="section-rule"></span>
       </div>
+      <div class="project-tabs" role="tablist" aria-label="프로젝트 카테고리">
+        <button class="project-tab active" data-filter="all" type="button">전체</button>
+        <button class="project-tab" data-filter="ml" type="button">머신러닝 · 딥러닝</button>
+        <button class="project-tab" data-filter="data" type="button">데이터 분석</button>
+      </div>
+
       <div class="project-list">
 
-        <article class="project-row">
+        <article class="project-row" data-category="ml">
           <span class="project-index">01</span>
           <div class="project-body">
             <div class="project-heading">
@@ -158,7 +164,7 @@
           </div>
         </article>
 
-        <article class="project-row">
+        <article class="project-row" data-category="ml">
           <span class="project-index">02</span>
           <div class="project-body">
             <div class="project-heading">
@@ -174,7 +180,7 @@
           </div>
         </article>
 
-        <article class="project-row">
+        <article class="project-row" data-category="data">
           <span class="project-index">03</span>
           <div class="project-body">
             <div class="project-heading">

@@ -438,6 +438,11 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.5rem;
   margin: 0;
 }
+.project-links {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+}
 .project-link {
   font-size: 0.82rem;
   font-weight: 600;
